@@ -24,7 +24,11 @@ class ProfilesController < ApplicationController
   # POST /profiles
   # POST /profiles.json
   def create
+    #successfully associated
+    @user = User.find_by_email("aditya1")
+
     @profile = Profile.new(profile_params)
+    @user.profile = @profile
 
     respond_to do |format|
       if @profile.save

@@ -1,3 +1,15 @@
+Association done with code
+    @user = User.find_by_email("aditya1")
+
+    @profile = Profile.new(profile_params)
+    @user.profile = @profile
+
+
+
+
+
+
+
 Let’s get inside a console session (rails console) and see how this comes together. If you have a console session
 opened, run the reload! command in the console session to make sure it loads the newly generated models. Follow
 along to create objects and relate them to one another. First, create a user and a profile as follows:
